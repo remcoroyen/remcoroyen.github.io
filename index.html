@@ -86,6 +86,77 @@
 		  </td>
 	</tr>
 	
+	<tr onmouseout="w6dnet_stop()" onmouseover="w6dnet_start()" bgcolor="#ffffd0">
+	  <td style="padding:20px;width:25%;vertical-align:middle">
+		<div class="one">
+		  <div class="two" id='w6dnet_boxplot'>
+			<img src='images_remco/protoseg_letter_prototypes.png' width="160"></div>
+		  <img src='images_remco/protoseg_letter_boxplot.jpg' width="160">
+		</div>
+		<script type="text/javascript">
+		  function w6dnet_start() {
+			document.getElementById('w6dnet_boxplot').style.opacity = "1";
+		  }
+
+		  function w6dnet_stop() {
+			document.getElementById('w6dnet_boxplot').style.opacity = "0";
+		  }
+		  w6dnet_stop()
+		</script>
+	  </td>
+	  <td style="padding:20px;width:75%;vertical-align:middle">
+		<span class="papertitle">W6dnet: Weakly-supervised domain adaptation for monocular vehicle 6d pose estimation with 3d priors and synthetic data (in press)</span>
+		<br>
+		<a href="https://www.etrovub.be/people/member/about-bio/lyangxin/">Yangxintong Lyu</a>,
+		<strong>Remco Royen</strong>,
+		<a href="https://www.etrovub.be/people/member/about-bio/acmuntea/">Adrian Munteanu</a>
+		<br>
+		<em> IEEE Transactions on Instrumentation and Measurement</em>, 2024
+		<br>
+		paper
+		<p></p>
+		<p>
+		A new synthetic dataset, SynthV6D, enabling 6D pose estimation of vehicles in monocular traffic images, is presented. Secondly, a weakly-supervised domain adaptation approach to recover the 6D pose is introduced. Experiments show that with a small amount of real-world data available, the proposed approach can significantly advance the performance when adapting knowledge from SynthV6D.
+		</p>
+	  </td>
+	</tr>
+	
+	<tr onmouseout="pcgen_stop()" onmouseover="pcgen_start()">
+	  <td style="padding:20px;width:25%;vertical-align:middle">
+		<div class="one">
+		  <div class="two" id='pcgen_boxplot'>
+			<img src='images_remco/protoseg_letter_prototypes.png' width="160"></div>
+		  <img src='images_remco/protoseg_letter_boxplot.jpg' width="160">
+		</div>
+		<script type="text/javascript">
+		  function pcgen_start() {
+			document.getElementById('pcgen_boxplot').style.opacity = "1";
+		  }
+
+		  function pcgen_stop() {
+			document.getElementById('pcgen_boxplot').style.opacity = "0";
+		  }
+		  pcgen_stop()
+		</script>
+	  </td>
+	  <td style="padding:20px;width:75%;vertical-align:middle">
+		<span class="papertitle">Pcgen: a fully parallelizable point cloud generative model (in press)</span>
+		<br>
+		<a href="https://gaim.ugent.be/authors/nicolas-vercheval/">Nicolas Vercheval</a>,
+		<strong>Remco Royen</strong>,
+		<a href="https://www.etrovub.be/people/member/about-bio/acmuntea/">Adrian Munteanu</a>,
+		<a href="https://telin.ugent.be/~sanja/">Aleksandra Pizurica</a>,
+		<br>
+		<em> MDPI Sensors</em>, 2024
+		<br>
+		paper
+		<p></p>
+		<p>
+		A fully parallelizable vector-quantized variational autoencoder model (VQVAE) that generates high-quality point clouds in milliseconds.
+		</p>
+	  </td>
+	</tr>
+	
 	<tr onmouseout="resscal3d_stop()" onmouseover="resscal3d_start()" bgcolor="#ffffd0">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
@@ -236,7 +307,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="foot_meas_start()" onmouseover="foot_meas_stop()">
+	<tr onmouseout="foot_meas_stop()" onmouseover="foot_meas_start()">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='foot_meas_boxplot'>
@@ -312,6 +383,44 @@
 		  </td>
 	</tr>
 	
+	<tr onmouseout="ml_stop()" onmouseover="ml_start()" bgcolor="#ffffd0">
+		  <td style="padding:20px;width:25%;vertical-align:middle">
+			<div class="one">
+			  <div class="two" id='ml_boxplot'>
+				<img src='images_remco/protoseg_letter_prototypes.png' width="160"></div>
+			  <img src='images_remco/protoseg_letter_boxplot.jpg' width="160">
+			</div>
+			<script type="text/javascript">
+			  function ml_start() {
+				document.getElementById('ml_boxplot').style.opacity = "1";
+			  }
+
+			  function ml_stop() {
+				document.getElementById('ml_boxplot').style.opacity = "0";
+			  }
+			  ml_stop()
+			</script>
+		  </td>
+		  <td style="padding:20px;width:75%;vertical-align:middle">
+			<a href="https://www.sciencedirect.com/science/article/abs/pii/S089360802100023X">
+              <span class="papertitle">MaskLayer: Enabling scalable deep learning solutions by training embedded feature sets</span>
+            </a>
+			<br>
+			<strong>Remco Royen</strong>,
+			<a href="https://ieeexplore.ieee.org/author/37395316800">Leon Denis</a>,
+			<a href="https://www.linkedin.com/in/quentin-bolsee-b17b3669">Quentin Bolsee</a>,
+			<a href="https://scholar.google.com/citations?user=7zhyEqsAAAAJ&hl=zh-CN">Pengpeng Hu</a>,
+			<a href="https://www.etrovub.be/people/member/about-bio/acmuntea/">Adrian Munteanu</a>
+			<br>
+			<em> Neural Networks</em>, 2021
+			<br>
+			<a href="https://www.sciencedirect.com/science/article/abs/pii/S089360802100023X">paper</a>
+			<p></p>
+			<p>
+			MaskLayer is a new neural network layer. It can be integrated in any feedforward network, allowing quality scalability by design by creating embedded feature sets. To further improve the performance, a masked optimizer and a balancing gradient rescaling approach are proposed. Our experiments show that the cost of introducing scalability using MaskLayer remains limited while important benefits are presented.
+			</p>
+		  </td>
+	</tr>
 
 
     <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
