@@ -161,7 +161,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="mono6d++_stop()" onmouseover="mono6d++_start()" bgcolor="#ffffd0">
+	<tr onmouseout="mono6d++_stop()" onmouseover="mono6d++_start()">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='mono6d++_boxplot'>
@@ -199,7 +199,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="bmv2_stop()" onmouseover="bmv2_start()" bgcolor="#ffffd0">
+	<tr onmouseout="bmv2_stop()" onmouseover="bmv2_start()">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='bmv2_boxplot'>
@@ -236,7 +236,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="foot_meas_start()" onmouseover="foot_meas_stop()" bgcolor="#ffffd0">
+	<tr onmouseout="foot_meas_start()" onmouseover="foot_meas_stop()">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='foot_meas_boxplot'>
@@ -275,6 +275,42 @@
 		  </td>
 	</tr>
 	
+	<tr onmouseout="mono6d_stop()" onmouseover="mono6d_start()" bgcolor="#ffffd0">
+		  <td style="padding:20px;width:25%;vertical-align:middle">
+			<div class="one">
+			  <div class="two" id='mono6d_boxplot'>
+				<img src='images_remco/protoseg_letter_prototypes.png' width="160"></div>
+			  <img src='images_remco/protoseg_letter_boxplot.jpg' width="160">
+			</div>
+			<script type="text/javascript">
+			  function mono6d_start() {
+				document.getElementById('mono6d_boxplot').style.opacity = "1";
+			  }
+
+			  function mono6d_stop() {
+				document.getElementById('mono6d_boxplot').style.opacity = "0";
+			  }
+			  mono6d_stop()
+			</script>
+		  </td>
+		  <td style="padding:20px;width:75%;vertical-align:middle">
+			<a href="https://ieeexplore.ieee.org/document/9897311">
+              <span class="papertitle">MONO6D: Monocular Vehicle 6D Pose Estimation with 3D Priors</span>
+            </a>
+			<br>
+			<a href="https://www.etrovub.be/people/member/about-bio/lyangxin/">Yangxintong Lyu</a>,
+			<strong>Remco Royen</strong>,
+			<a href="https://www.etrovub.be/people/member/about-bio/acmuntea/">Adrian Munteanu</a>
+			<br>
+			<em> IEEE International Conference on Image Processing (ICIP)</em>, 2022
+			<br>
+			<a href="https://ieeexplore.ieee.org/document/9897311">paper</a>
+			<p></p>
+			<p>
+			A novel monocular approach for vehicle pose estimation using vehicle 3D priors provided by vehicle make-and-model recognition methods to estimate the 6D pose. The experimental results show that the proposed method is superior to the state-of-the-art approaches in both objective and subjective terms.
+			</p>
+		  </td>
+	</tr>
 	
 
 
