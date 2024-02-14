@@ -51,7 +51,7 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-	<tr onmouseout="malle_stop()" onmouseover="malle_start()">
+	<tr onmouseout="letter_stop()" onmouseover="letter_start()">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='protoseg_boxplot'>
@@ -59,14 +59,14 @@
 			  <img src='images_remco/protoseg_letter_boxplot.jpg' width="100">
 			</div>
 			<script type="text/javascript">
-			  function malle_start() {
+			  function letter_start() {
 				document.getElementById('protoseg_boxplot').style.opacity = "1";
 			  }
 
-			  function malle_stop() {
+			  function letter_stop() {
 				document.getElementById('protoseg_boxplot').style.opacity = "0";
 			  }
-			  malle_stop()
+			  letter_stop()
 			</script>
 		  </td>
 		  <td style="padding:20px;width:75%;vertical-align:middle">
