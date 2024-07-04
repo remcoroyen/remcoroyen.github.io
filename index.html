@@ -32,7 +32,7 @@
                   <a href="data_remco/RemcoRoyen_CV_complete.pdf">CV</a> &nbsp;/&nbsp;
 				  <a href="https://www.linkedin.com/in/remcoroyen/">LinkedIn</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.be/citations?user=T__muSgAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/remcoroyen/">Github</a>
+                  <a href="https://github.com/remcoroyen/">GitHub</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -44,15 +44,52 @@
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Publications</h2>
-                <p>
-                 Representative papers for my research are <span class="highlight">highlighted</span>.
-                </p>
+				<p> *Indicates Equal Contribution </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		  
+	<tr onmouseout="rtgs2_stop()" onmouseover="rtgs2_start()" bgcolor="#ffffd0">
+		  <td style="padding:20px;width:25%;vertical-align:middle">
+			<div class="one_rt_gs2">
+			  <div class="two" id='rt_gs2_image'><video  width=100% muted autoplay loop>
+			  <source src="images_remco/rt-gs2_sem_pred_replica_full.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			  </video></div>
+			  <img src='images_remco/rt-gs2_sem_pred_replica_image.png' width=100%>
+			</div>
+			<script type="text/javascript">
+			  function rtgs2_start() {
+				document.getElementById('rt_gs2_image').style.opacity = "1";
+			  }
 
-	<tr onmouseout="letter_stop()" onmouseover="letter_start()" bgcolor="#ffffd0">
+			  function rtgs2_stop() {
+				document.getElementById('rt_gs2_image').style.opacity = "0";
+			  }
+			  rtgs2_stop()
+			</script>
+		  </td>
+		  <td style="padding:20px;width:75%;vertical-align:middle">
+		    <strong>RT-GS2: Real-Time Generalizable Semantic Segmentation for 3D Gaussian Representations of Radiance Fields</strong>
+		    <br>
+			<a href="https://mbjurca.github.io/">Mihnea-Bogdan Jurca</a>*,
+			<strong>Remco Royen*</strong>,
+			<a href="https://users.utcluj.ro/~igiosan/#about">Ion Giosan</a>,
+			<a href="https://www.etrovub.be/people/member/about-bio/acmuntea/">Adrian Munteanu</a>
+			<br>
+			<em>Arxiv</em>, 2024
+			<br>
+			<a href="https://arxiv.org/abs/2405.18033">[ArXiv]</a> 
+			[Code]
+			<a href="https://mbjurca.github.io/rt-gs2/">[Project Page]</a> 
+			<p></p>
+			<p>
+			The first generalizable semantic segmentation method employing Gaussian Splatting. Our method is not only superior in segmentation quality, but also achieves real-time performance of 27 FPS, marking an astonishing 901 times speedup compared to the SOTA.</p>
+		  </td>
+	</tr>
+
+	<tr onmouseout="letter_stop()" onmouseover="letter_start()" bgcolor="#Efffd0">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='protoseg_boxplot'>
@@ -71,18 +108,16 @@
 			</script>
 		  </td>
 		  <td style="padding:20px;width:75%;vertical-align:middle">
-		    <a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ell2.13137">
-              <span class="papertitle">Joint prototype and coefficient prediction for 3d instance segmentation</span>
-			</a>
-			<br>
+		    <strong>Joint prototype and coefficient prediction for 3d instance segmentation</strong>
+		    <br>
 			<strong>Remco Royen</strong>,
 			<a href="https://ieeexplore.ieee.org/author/37395316800">Leon Denis</a>,
 			<a href="https://www.etrovub.be/people/member/about-bio/acmuntea/">Adrian Munteanu</a>
 			<br>
 			<em>IET Electronics Letters</em>, 2024
 			<br>
-			<a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ell2.13137">Paper</a> /
-			<a href="https://github.com/remcoroyen/3d-instseg-prototypes">GitHub</a>
+			<a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ell2.13137">[Paper]</a> 
+			<a href="https://github.com/remcoroyen/3d-instseg-prototypes">[Code]</a>
 			<p></p>
 			<p>
 			A 3D instance segmentation method which simultaneously learns coefficients and prototypes. The obtained prototypes are visualizable and interpretable.
@@ -90,7 +125,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="w6dnet_stop()" onmouseover="w6dnet_start()" bgcolor="#ffffd0">
+	<tr onmouseout="w6dnet_stop()" onmouseover="w6dnet_start()"  bgcolor="#ffffd0">
 	  <td style="padding:20px;width:25%;vertical-align:middle">
 		<div class="one">
 		  <div class="two" id='w6dnet_boxplot'>
@@ -109,9 +144,7 @@
 		</script>
 	  </td>
 	  <td style="padding:20px;width:75%;vertical-align:middle">
-		<a href="https://ieeexplore.ieee.org/document/10443331">
-              <span class="papertitle">W6dnet: Weakly-supervised domain adaptation for monocular vehicle 6d pose estimation with 3d priors and synthetic data</span>
-        </a>
+		<strong>W6dnet: Weakly-supervised domain adaptation for monocular vehicle 6d pose estimation with 3d priors and synthetic data</strong>
 		<br>
 		<a href="https://www.etrovub.be/people/member/about-bio/lyangxin/">Yangxintong Lyu</a>,
 		<strong>Remco Royen</strong>,
@@ -119,8 +152,8 @@
 		<br>
 		<em> IEEE Transactions on Instrumentation and Measurement</em>, 2024
 		<br>
-		<a href="https://ieeexplore.ieee.org/document/10443331">Paper</a> / 
-		<a href="https://github.com/YangLyu-123/TIM-W6DNet.git">GitHub</a>
+		<a href="https://ieeexplore.ieee.org/document/10443331">[Paper]</a> 
+		<a href="https://github.com/YangLyu-123/TIM-W6DNet.git">[Code]</a>
 		<p></p>
 		<p>
 		1) The presentation of a new highly realistic synthetic traffic dataset, SynthV6D, for 6D pose estimation. 2) A weakly-supervised domain adaptation approach for 6D pose estimation of vehicles.
@@ -128,7 +161,7 @@
 	  </td>
 	</tr>
 	
-	<tr onmouseout="pcgen_stop()" onmouseover="pcgen_start()">
+	<tr onmouseout="pcgen_stop()" onmouseover="pcgen_start()" bgcolor="#efffd0">
 	  <td style="padding:20px;width:25%;vertical-align:middle">
 		<div class="one">
 		  <div class="two" id='pcgen_boxplot'>
@@ -147,8 +180,7 @@
 		</script>
 	  </td>
 	  <td style="padding:20px;width:75%;vertical-align:middle">
-		<a href="https://www.mdpi.com/1424-8220/24/5/1414">
-              <span class="papertitle">Pcgen: a fully parallelizable point cloud generative model</span>
+		<strong>Pcgen: a fully parallelizable point cloud generative model</strong>
         </a>
 		<br>
 		<a href="https://gaim.ugent.be/authors/nicolas-vercheval/">Nicolas Vercheval</a>,
@@ -158,7 +190,7 @@
 		<br>
 		<em> MDPI Sensors</em>, 2024
 		<br>
-		<a href="https://www.mdpi.com/1424-8220/24/5/1414">Paper</a> / <a href="https://github.com/nverchev/PCGen">GitHub</a>
+		<a href="https://www.mdpi.com/1424-8220/24/5/1414">[Paper]</a> <a href="https://github.com/nverchev/PCGen">[Code]</a>
 		<p></p>
 		<p>
 		A fully parallelizable vector-quantized variational autoencoder model (VQVAE) that generates high-quality point clouds in milliseconds.
@@ -166,7 +198,7 @@
 	  </td>
 	</tr>
 	
-	<tr onmouseout="resscal3d_stop()" onmouseover="resscal3d_start()" bgcolor="#ffffd0">
+	<tr onmouseout="resscal3d_stop()" onmouseover="resscal3d_start()"  bgcolor="#ffffd0">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='resscal3d_boxplot'>
@@ -185,8 +217,7 @@
 			</script>
 		  </td>
 		  <td style="padding:20px;width:75%;vertical-align:middle">
-			<a href="https://ieeexplore.ieee.org/document/10222338">
-              <span class="papertitle">RESSCAL3D: Resolution Scalable 3D Semantic Segmentation of Point Clouds</span>
+			<strong>RESSCAL3D: Resolution Scalable 3D Semantic Segmentation of Point Clouds</strong>
             </a>
 			<br>
 			<strong>Remco Royen</strong>,
@@ -194,7 +225,7 @@
 			<br>
 			<em> IEEE International Conference on Image Processing (ICIP)</em>, 2023
 			<br>
-			<a href="https://ieeexplore.ieee.org/document/10222338">Paper</a>
+			<a href="https://ieeexplore.ieee.org/document/10222338">[Paper]</a>
 			<p></p>
 			<p>
 			Resolution-scalable 3D semantic segmentation of point clouds. By enabling the processing of different resolution scales in parallel, RESSCAL3D is 31-62% faster than the non-scalable baseline and allows early predictions.
@@ -202,7 +233,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="lidar_stop()" onmouseover="lidar_start()">
+	<tr onmouseout="lidar_stop()" onmouseover="lidar_start()"  bgcolor="#efffd0">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='lidar_boxplot'>
@@ -221,8 +252,7 @@
 			</script>
 		  </td>
 		  <td style="padding:20px;width:75%;vertical-align:middle">
-			<a href="https://www.mdpi.com/1424-8220/23/19/8130">
-              <span class="papertitle">GPU Rasterization-Based 3D LiDAR Simulation for Deep Learning</span>
+			<strong>GPU Rasterization-Based 3D LiDAR Simulation for Deep Learning</strong>
             </a>
 			<br>
 			<a href="https://ieeexplore.ieee.org/author/37395316800">Leon Denis</a>,
@@ -233,7 +263,7 @@
 			<br>
 			<em> MDPI Sensors</em>, 2023
 			<br>
-			<a href="https://www.mdpi.com/1424-8220/23/19/8130">Paper</a>
+			<a href="https://www.mdpi.com/1424-8220/23/19/8130">[Paper]</a>
 			<p></p>
 			<p>
 			A GPU-accelerated simulator that enables the generation of high-quality, perfectly labelled data for any Time-of-Flight sensor, including LiDAR.
@@ -241,7 +271,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="mono6dpp_stop()" onmouseover="mono6dpp_start()">
+	<tr onmouseout="mono6dpp_stop()" onmouseover="mono6dpp_start()"  bgcolor="#ffffd0">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='mono6dpp_boxplot'>
@@ -260,8 +290,7 @@
 			</script>
 		  </td>
 		  <td style="padding:20px;width:75%;vertical-align:middle">
-			<a href="https://ieeexplore.ieee.org/document/10323075">
-              <span class="papertitle">Mono6D++: Learning Point Cloud Visibility for 3D Prior-based Vehicle 6D Pose Estimation</span>
+			<strong>Mono6D++: Learning Point Cloud Visibility for 3D Prior-based Vehicle 6D Pose Estimation</strong>
             </a>
 			<br>
 			<a href="https://www.etrovub.be/people/member/about-bio/lyangxin/">Yangxintong Lyu</a>,
@@ -271,7 +300,7 @@
 			<br>
 			<em> European Workshop on Visual Information Processing (EUVIP)</em>, 2023
 			<br>
-			<a href="https://ieeexplore.ieee.org/document/10323075">Paper</a>
+			<a href="https://ieeexplore.ieee.org/document/10323075">[Paper]</a>
 			<p></p>
 			<p>
 			An improvement over Mono6D by the introduction of point cloud visibility prediction.
@@ -279,7 +308,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="bmv2_stop()" onmouseover="bmv2_start()">
+	<tr onmouseout="bmv2_stop()" onmouseover="bmv2_start()"  bgcolor="#efffd0">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='bmv2_boxplot'>
@@ -298,8 +327,7 @@
 			</script>
 		  </td>
 		  <td style="padding:20px;width:75%;vertical-align:middle">
-			<a href="https://ieeexplore.ieee.org/document/10167976">
-              <span class="papertitle">Improved Block Merging for 3D Point Cloud Instance Segmentation</span>
+			<strong>Improved Block Merging for 3D Point Cloud Instance Segmentation</strong>
             </a>
 			<br>
 			<a href="https://ieeexplore.ieee.org/author/37395316800">Leon Denis</a>,
@@ -308,8 +336,8 @@
 			<br>
 			<em> International Conference on Digital Signal Processing (DSP)</em>, 2023
 			<br>
-			<a href="https://ieeexplore.ieee.org/document/10167976">Paper</a> / 
-			<a href="https://github.com/remcoroyen/BlockMerging-v2">GitHub</a>
+			<a href="https://ieeexplore.ieee.org/document/10167976">[Paper]</a> 
+			<a href="https://github.com/remcoroyen/BlockMerging-v2">[Code]</a>
 			<p></p>
 			<p>
 			A new block merging algorithm suitable for any block-based 3D instance segmentation technique. It significantly and consistently improves the obtained accuracy for all evaluation metrics employed in literature, regardless of the underlying network architecture.
@@ -317,7 +345,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="foot_meas_stop()" onmouseover="foot_meas_start()">
+	<tr onmouseout="foot_meas_stop()" onmouseover="foot_meas_start()"  bgcolor="#ffffd0">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='foot_meas_boxplot'>
@@ -336,8 +364,7 @@
 			</script>
 		  </td>
 		  <td style="padding:20px;width:75%;vertical-align:middle">
-			<a href="https://www.researchgate.net/publication/369862571_A_Deep-Learning-Based_Approach_to_Automatically_Measuring_Foots_From_a_3D_Scan">
-              <span class="papertitle">A Deep-learning-based Approach to Automatically Measuring Foots from a 3D scan</span>
+			<strong>A Deep-learning-based Approach to Automatically Measuring Foots from a 3D scan</strong>
             </a>
 			<br>
 			<a href="https://sites.google.com/view/nastaran-nourbakhsh">Nastaran Nourbakhsh Kaashki</a>,
@@ -348,7 +375,7 @@
 			<br>
 			<em> IEEE Asia-Pacific Conference on Computer Science and Data Engineering (CSDE)</em>, 2022
 			<br>
-			<a href="https://www.researchgate.net/publication/369862571_A_Deep-Learning-Based_Approach_to_Automatically_Measuring_Foots_From_a_3D_Scan">Paper</a>
+			<a href="https://www.researchgate.net/publication/369862571_A_Deep-Learning-Based_Approach_to_Automatically_Measuring_Foots_From_a_3D_Scan">[Paper]</a>
 			<p></p>
 			<p>
 			The first deep-learning-based approach to automatic foot measurement extraction from a single 3D scan.
@@ -356,7 +383,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="mono6d_stop()" onmouseover="mono6d_start()" bgcolor="#ffffd0">
+	<tr onmouseout="mono6d_stop()" onmouseover="mono6d_start()"  bgcolor="#efffd0">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='mono6d_boxplot'>
@@ -375,8 +402,7 @@
 			</script>
 		  </td>
 		  <td style="padding:20px;width:75%;vertical-align:middle">
-			<a href="https://ieeexplore.ieee.org/document/9897311">
-              <span class="papertitle">MONO6D: Monocular Vehicle 6D Pose Estimation with 3D Priors</span>
+			<strong>MONO6D: Monocular Vehicle 6D Pose Estimation with 3D Priors</strong>
             </a>
 			<br>
 			<a href="https://www.etrovub.be/people/member/about-bio/lyangxin/">Yangxintong Lyu</a>,
@@ -385,7 +411,7 @@
 			<br>
 			<em> IEEE International Conference on Image Processing (ICIP)</em>, 2022
 			<br>
-			<a href="https://ieeexplore.ieee.org/document/9897311">Paper</a>
+			<a href="https://ieeexplore.ieee.org/document/9897311">[Paper]</a>
 			<p></p>
 			<p>
 			A monocular approach for vehicle pose estimation using vehicle 3D priors provided by vehicle make-and-model recognition methods to estimate the 6D pose.
@@ -393,7 +419,7 @@
 		  </td>
 	</tr>
 	
-	<tr onmouseout="ml_stop()" onmouseover="ml_start()" bgcolor="#ffffd0">
+	<tr onmouseout="ml_stop()" onmouseover="ml_start()"  bgcolor="#ffffd0">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
 			  <div class="two" id='ml_boxplot'>
@@ -412,8 +438,7 @@
 			</script>
 		  </td>
 		  <td style="padding:20px;width:75%;vertical-align:middle">
-			<a href="https://www.sciencedirect.com/science/article/abs/pii/S089360802100023X">
-              <span class="papertitle">MaskLayer: Enabling scalable deep learning solutions by training embedded feature sets</span>
+			<strong>MaskLayer: Enabling scalable deep learning solutions by training embedded feature sets</strong>
             </a>
 			<br>
 			<strong>Remco Royen</strong>,
@@ -422,10 +447,10 @@
 			<a href="https://scholar.google.com/citations?user=7zhyEqsAAAAJ&hl=zh-CN">Pengpeng Hu</a>,
 			<a href="https://www.etrovub.be/people/member/about-bio/acmuntea/">Adrian Munteanu</a>
 			<br>
-			<em> Neural Networks</em>, 2021
+			<em> Neural Networks (IF 9.7)</em>, 2021
 			<br>
-			<a href="https://www.sciencedirect.com/science/article/abs/pii/S089360802100023X">Paper</a> / 
-			<a href="https://github.com/remcoroyen/MaskLayer">GitHub</a>
+			<a href="https://www.sciencedirect.com/science/article/abs/pii/S089360802100023X">[Paper]</a> 
+			<a href="https://github.com/remcoroyen/MaskLayer">[Code]</a>
 			<p></p>
 			<p>
 			A new neural network layer. It can be integrated in any feedforward network, allowing quality scalability by design by creating embedded feature sets.
@@ -490,7 +515,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Created based on <a href="https://jonbarron.info/">Jon Barron</a>'s <a href="https://github.com/jonbarron/jonbarron_website">code</a> and <a href="https://rui2016.github.io/">Rui Wang</a>'s website. Last update: 27 February 2024
+                  Created based on <a href="https://jonbarron.info/">Jon Barron</a>'s <a href="https://github.com/jonbarron/jonbarron_website">code</a> and <a href="https://rui2016.github.io/">Rui Wang</a>'s website. Last update: 4 July 2024
                 </p>
               </td>
             </tr>

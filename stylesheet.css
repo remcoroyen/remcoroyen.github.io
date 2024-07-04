@@ -90,8 +90,6 @@ strong {
 }
 
 h2 {
-  margin: 0;
-  font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
 }
@@ -122,6 +120,13 @@ h2 {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+}
+
+.one_rt_gs2 {
+  padding-top: 25px;
+  width: 160px;
+  height: 160px;
+  position: relative;
 }
 
 .fade {
