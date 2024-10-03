@@ -185,21 +185,94 @@
 			The first generalizable semantic segmentation method employing Gaussian Splatting. Our method is not only superior in segmentation quality, but also achieves real-time performance of 27 FPS, marking an astonishing 901 times speedup compared to the SOTA.</p>
 		  </td>
 	</tr>
+	
+	<tr onmouseout="protoseg_stop()" onmouseover="protoseg_start()" bgcolor="#Efffd0">
+		  <td style="padding:20px;width:25%;vertical-align:middle">
+			<div class="one">
+			  <div class="two" id='protoseg_boxplot'>
+				<img src='images_remco/protoseg_partnet_visual.png' width="160"></div>
+			  <img src='images_remco/protoseg_letter_prototypes_cropped.png' width="160">
+			</div>
+			<script type="text/javascript">
+			  function protoseg_start() {
+				document.getElementById('protoseg_boxplot').style.opacity = "1";
+			  }
+
+			  function protoseg_stop() {
+				document.getElementById('protoseg_boxplot').style.opacity = "0";
+			  }
+			  protoseg_stop()
+			</script>
+		  </td>
+		  <td style="padding:20px;width:75%;vertical-align:middle">
+		    <strong>ProtoSeg: A Prototype-Based Point Cloud Instance Segmentation Method</strong>
+		    <br>
+			<strong>Remco Royen</strong>,
+			<a href="https://ieeexplore.ieee.org/author/37395316800">Leon Denis</a>,
+			<a href="https://www.etrovub.be/people/member/about-bio/acmuntea/">Adrian Munteanu</a>
+			<br>
+			<em>ArXiv</em>, 2024
+			<br>
+			[ArXiv]
+			<a href="https://github.com/remcoroyen/3d-instseg-prototypes">[Code]</a>
+			<p></p>
+			<p>
+			A 3D instance segmentation method which simultaneously learns coefficients and prototypes. The obtained prototypes are visualizable and interpretable. Experiments on S3DIS-blocks and PartNet.
+			</p>
+		  </td>
+	</tr>
+	
+	<tr onmouseout="resscal3dpp_stop()" onmouseover="resscal3dpp_start()" bgcolor="#ffffd0">
+		  <td style="padding:20px;width:25%;vertical-align:middle">
+			<div class="one">
+			  <div class="two" id='rescal3dpp_visual'>
+				<img src='images_remco/resscal3dpp_scale3.PNG' width="160"></div>
+			  <img src='images_remco/resscal3dpp_scale0.PNG' width="160">
+			</div>
+			<script type="text/javascript">
+			  function resscal3dpp_start() {
+				document.getElementById('rescal3dpp_visual').style.opacity = "1";
+			  }
+
+			  function resscal3dpp_stop() {
+				document.getElementById('rescal3dpp_visual').style.opacity = "0";
+			  }
+			  resscal3dpp_stop()
+			</script>
+		  </td>
+		  <td style="padding:20px;width:75%;vertical-align:middle">
+		    <strong>RESSCAL3D++: Joint Acquisition and Semantic Segmentation of 3D Point Clouds</strong>
+		    <br>
+			<strong>Remco Royen</strong>,
+			<a href="https://www.torch.ox.ac.uk/people/kostas-pataridis">Kostas Pataridis</a>,
+			<a href="https://be.linkedin.com/in/ward-van-der-tempel">Ward van der Tempel</a>,
+			<a href="https://www.etrovub.be/people/member/about-bio/acmuntea/">Adrian Munteanu</a>
+			<br>
+			<em>IEEE International Conference on Image Processing (ICIP)</em>, 2024
+			<br>
+			[ArXiv] <a href="https://ieeexplore.ieee.org/document/10647742">[Paper]</a> 
+			[Code] <a href="https://github.com/remcoroyen/vx-s3dis">[Dataset]</a> 
+			<p></p>
+			<p>
+			A significant improvement in performance over RESSCAL3D: resolution scalable 3D semantic segmentation + a new dataset VX-S3DIS exhibiting resolution scalable point streams with semantic labels.
+			</p>
+		  </td>
+	</tr>
 
 	<tr onmouseout="letter_stop()" onmouseover="letter_start()" bgcolor="#Efffd0">
 		  <td style="padding:20px;width:25%;vertical-align:middle">
 			<div class="one">
-			  <div class="two" id='protoseg_boxplot'>
-				<img src='images_remco/protoseg_letter_prototypes.png' width="160"></div>
+			  <div class="two" id='letter_boxplot'>
+				<img src='images_remco/protoseg_letter_prototypes_cropped.png' width="160"></div>
 			  <img src='images_remco/protoseg_letter_boxplot.jpg' width="160">
 			</div>
 			<script type="text/javascript">
 			  function letter_start() {
-				document.getElementById('protoseg_boxplot').style.opacity = "1";
+				document.getElementById('letter_boxplot').style.opacity = "1";
 			  }
 
 			  function letter_stop() {
-				document.getElementById('protoseg_boxplot').style.opacity = "0";
+				document.getElementById('letter_boxplot').style.opacity = "0";
 			  }
 			  letter_stop()
 			</script>
@@ -621,7 +694,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Created based on <a href="https://jonbarron.info/">Jon Barron</a>'s <a href="https://github.com/jonbarron/jonbarron_website">code</a> and <a href="https://rui2016.github.io/">Rui Wang</a>'s website. Last update: 6 September 2024
+                  Created based on <a href="https://jonbarron.info/">Jon Barron</a>'s <a href="https://github.com/jonbarron/jonbarron_website">code</a> and <a href="https://rui2016.github.io/">Rui Wang</a>'s website. Last update: 3 October 2024
                 </p>
               </td>
             </tr>
